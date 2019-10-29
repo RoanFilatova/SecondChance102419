@@ -1,0 +1,34 @@
+﻿@model BusinessLogicLayer.BreedBLL
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Breed Information</h2>
+
+<div>
+    <h4>Select a breed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BreedID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BreedID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BreedName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BreedName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BreedID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

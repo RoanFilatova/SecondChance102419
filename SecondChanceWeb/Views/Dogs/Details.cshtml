@@ -1,0 +1,82 @@
+﻿@model BusinessLogicLayer.DogBLL
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dog Deets</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DogID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DogID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BreedID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BreedID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSmallBreed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSmallBreed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDogHairless)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDogHairless)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Medical)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medical)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdoptDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdoptDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurrenderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurrenderDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { Model.DogID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
